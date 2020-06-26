@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - Syniikal</title>
+    {% else %}
+    <title>Welcome to Syntopia!</title>
+    {% endif %}
+  </head>
+  <body>
+      <h1>Welcome {{user.username}}!</h1>
+      {% for post in posts %}
+      <div><p>{{post.author.username}} says: <b>{{post.body}}</b></p></div>
+      {% endfor %}
+  </body>
+</html>
