@@ -1,0 +1,121 @@
+2020-11-13 01:44:32,904 ERROR: Exception on /user/tester [GET] [in c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\routes.py", line 82, in user
+    return render_template('user.html', user=user, posts=posts.items,
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\user.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\user.html", line 35, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2020-11-13 01:50:31,797 ERROR: Exception on /user/tester [GET] [in c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\routes.py", line 82, in user
+    return render_template('user.html', user=user, posts=posts.items,
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\user.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\user.html", line 35, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2020-11-13 01:51:28,126 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:47]
+2020-11-13 01:54:47,725 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:47]
+2020-11-13 18:33:41,847 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:47]
+2020-11-13 18:35:01,665 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:47]
+2020-11-15 13:04:39,823 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:49]
+2020-11-17 02:39:09,883 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]
+2020-11-17 02:40:31,238 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]
+2020-11-17 02:41:53,798 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]
+2020-11-17 02:41:59,402 ERROR: Exception on /login [GET] [in c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\routes.py", line 57, in login
+    return render_template('login.html', title = _('Sign In'), form = form)
+NameError: name '_' is not defined
+2020-11-17 02:42:09,451 ERROR: Exception on /login [GET] [in c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\routes.py", line 57, in login
+    return render_template('login.html', title = _('Sign In'), form = form)
+NameError: name '_' is not defined
+2020-11-17 02:43:06,376 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]
+2020-11-17 02:44:02,977 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]
+2020-11-17 03:19:10,675 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]
+2020-11-17 03:22:11,979 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]
+2020-11-19 14:16:53,290 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]
+2020-11-19 14:17:06,037 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]
+2020-11-19 16:08:34,889 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]
+2020-11-19 16:08:45,823 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]
+2020-11-19 16:09:08,269 INFO: Syntopia startup [in C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\__init__.py:52]

@@ -1,0 +1,105 @@
+2020-11-13 01:43:31,469 ERROR: Exception on /user/tester [GET] [in c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\routes.py", line 82, in user
+    return render_template('user.html', user=user, posts=posts.items,
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\user.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\user.html", line 35, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2020-11-13 01:43:32,593 ERROR: Exception on /user/tester [GET] [in c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\routes.py", line 82, in user
+    return render_template('user.html', user=user, posts=posts.items,
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\user.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\user.html", line 35, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2020-11-13 01:43:34,910 ERROR: Exception on /user/tester [GET] [in c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\routes.py", line 82, in user
+    return render_template('user.html', user=user, posts=posts.items,
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\onecalledsyn\desktop\pythonwebsite\syn\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\user.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\OneCalledSyn\Desktop\pythonwebsite\app\templates\user.html", line 35, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
